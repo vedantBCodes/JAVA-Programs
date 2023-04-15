@@ -15,7 +15,7 @@ public class LogicalOperator {
         int c=30;
         System.out.println((a>b)&&(c>b));
         System.out.println((a>b)||(c>b));
-         System.out.println(!(a>b));
+        System.out.println(!(a>b));
     }
 
 }
