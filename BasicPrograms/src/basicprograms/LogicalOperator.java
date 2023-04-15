@@ -13,9 +13,9 @@ public class LogicalOperator {
         int a=10;
         int b=20;
         int c=30;
-        System.out.println((a>b)&&(c>b));
-        System.out.println((a>b)||(c>b));
-        System.out.println(!(a>b));
+        System.out.println((a>b)&&(c>b)); //false
+        System.out.println((a>b)||(c>b)); //true
+        System.out.println(!(a>b));       //true
     }
 
 }
