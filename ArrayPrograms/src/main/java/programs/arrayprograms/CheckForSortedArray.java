@@ -1,5 +1,6 @@
 package programs.arrayprograms;
 
+import static java.lang.System.exit;
 import java.util.Scanner;
 
 public class CheckForSortedArray {
@@ -14,30 +15,18 @@ public class CheckForSortedArray {
         {
             arr[i]=obj.nextInt();
         }
-       /*for(int i=0;i<size;i++)
-        {
-            arr2[i]=arr[i];
-        }*/
-        int cnt=0;
+       int cnt=0;
         for(int i=0;i<size;i++)
         {
             for(int j=(i+1);j<size;j++)
             {
                 if(arr[i]>arr[j])
                 {
-                   cnt++;
+                    System.out.println("Entered array is not sorted");
+                    exit(0);
                 }
             }
-        }
-        if(cnt>0)
-        {
-            System.out.println("Entered array is not sorted");
-        }
-        else
-        {
-            System.out.println("Entered array is sorted");
-        }
-        
-    }
-    
+        }       
+            System.out.println("Entered array is sorted");        
+    }    
 }
