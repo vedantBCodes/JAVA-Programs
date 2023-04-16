@@ -1,4 +1,4 @@
-package programs.previousyearquestionstmv;
+package programs.specialjavaprograms;
 //IMPORTANT NOTE:Strings are immutable
 import java.util.Scanner;
 public class RemoveDuplicateCharacters {
