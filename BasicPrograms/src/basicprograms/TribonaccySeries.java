@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class TribonaccySeries {
     public static void main(String[] args) {
         Scanner obj=new Scanner(System.in);
-        System.out.println("Enter how many first numbers of tribonaccy series you want to print:");
+        System.out.print("Enter how many first numbers of tribonaccy series you want to print:");
         int num=obj.nextInt();
         int a=0;
         int b=1;
