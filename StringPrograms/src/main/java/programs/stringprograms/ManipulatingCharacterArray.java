@@ -18,13 +18,12 @@ public class ManipulatingCharacterArray {
        {
             System.out.println("Character st index "+i+" is:"+str[i]);           
        }
-         System.out.println("Enter a string:");
-         Scanner obj=new Scanner(System.in);
+       System.out.print("Enter a string:");
+       Scanner obj=new Scanner(System.in);
        char[] str2 = obj.next().toCharArray();
        for(int i=0;i<str.length;i++)
        {
             System.out.println("Character st index "+i+" is:"+str2[i]);           
        }
     }
-    
 }
