@@ -10,17 +10,12 @@ import java.util.Scanner;
  *
  * @author Lenovo
  */
-public class ExtractingSubstring {
+public class ExtractingSubstring2 {
     public static void main(String[] args) {
         System.out.print("Enter a string:");
         Scanner obj=new Scanner(System.in);
         String str=obj.nextLine();
-        int start=2;
-        int end=5;
-        char substring[ ]=new char[end-start];
-        str.getChars(start, end, substring, 0);
-        System.out.println("Extracted string:");
-        System.out.print(substring);
+        String str2=str.substring(2,4);
+        System.out.print("Extracted string:"+str2);
     }
-    
 }
