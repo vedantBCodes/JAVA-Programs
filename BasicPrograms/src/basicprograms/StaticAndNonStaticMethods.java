@@ -1,21 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package basicprograms;
 
-/**
- *
- * @author Lenovo
- */
+//In this program we are calling static and non-static methods declared in the same program
 public class StaticAndNonStaticMethods {
-    public static void StaticMethod()
+    static void StaticMethod()
     {
         System.out.println("Static Method called");
     }
-    public void NonStaticMethod()
+    void NonStaticMethod()
     {
         System.out.println("Non-Static Method called");
+    }
+    public static void main(String[] args) {
+        StaticAndNonStaticMethods obj3=new StaticAndNonStaticMethods();
+        StaticMethod();
+        //NOTE-STATIC METHODS CAN ACCESS STATIC METHODS
+        obj3.NonStaticMethod();
+        //NOTE-STATIC METHODS CAN ACCESS NON-STATIC METHODS BY CREATING OBJECTS
     }
     
 }
