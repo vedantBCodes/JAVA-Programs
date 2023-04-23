@@ -26,6 +26,7 @@ public class StaticAndNonStaticVariables {
         System.out.println("a:"+a);
         //AS MAIN IS A STATIC METHOD IT CAN ACCESS ONLY STATIC VARIABLES
         StaticAndNonStaticVariables obj=new StaticAndNonStaticVariables();
+        
         System.out.println("b:"+obj.b);
         //STATIC METHODS CAN ACCESS NON-STATIC VARIABLES BY CREATING OBJECT OF CLASS
     }

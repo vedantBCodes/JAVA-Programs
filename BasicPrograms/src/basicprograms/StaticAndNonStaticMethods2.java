@@ -13,7 +13,7 @@ public class StaticAndNonStaticMethods2 {
     
     public static void main(String[] args) {
         AnotherClass obj3=new AnotherClass();
-        AnotherClass.StaticMethod();
+        obj3.StaticMethod();
         //NOTE-STATIC METHODS CAN ACCESS STATIC METHODS BY USING CLASS-NAME
         //OF THE CLASS IN WHICH IT  IS DEFINED
         obj3.NonStaticMethod();
