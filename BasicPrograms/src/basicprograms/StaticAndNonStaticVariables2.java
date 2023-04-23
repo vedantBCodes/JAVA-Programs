@@ -8,8 +8,17 @@ package basicprograms;
  *
  * @author Lenovo
  */
-//HERE WE ARE ACCESSING THE STATIC  AND NON-STATIC VARIABLES DEFINED IN THE SAME CLASS
-public class StaticAndNonStaticVariables {
+public class StaticAndNonStaticVariables2 {
+     
+    public static void main(String[] args) {
+        AnotherClass obj3=new AnotherClass();
+        System.out.println("a:"+obj3.a);
+        //AS MAIN IS A STATIC METHOD IT CAN ACCESS ONLY STATIC VARIABLES
+        System.out.println("b:"+obj3.b);
+        //STATIC METHODS CAN ACCESS NON-STATIC VARIABLES BY CREATING OBJECT OF CLASS
+    }     
+}
+class AnotherClass{
     static int a=10;  //Static variable
     int b=20;   //Non-static variables OR instance variable
      static void StaticMethod()
@@ -21,13 +30,6 @@ public class StaticAndNonStaticVariables {
     {
         System.out.println("In Non-Static Method\n a="+a+"\n b="+b);
         //NOTE -NON-STATIC METHODS CAN ACCESS BOTH STATIC AND NON-STATIC VARIABLES
-    }
-    public static void main(String[] args) {
-        System.out.println("a:"+a);
-        //AS MAIN IS A STATIC METHOD IT CAN ACCESS ONLY STATIC VARIABLES
-        StaticAndNonStaticVariables obj=new StaticAndNonStaticVariables();
-        System.out.println("b:"+obj.b);
-        //STATIC METHODS CAN ACCESS NON-STATIC VARIABLES BY CREATING OBJECT OF CLASS
     }
     
 }

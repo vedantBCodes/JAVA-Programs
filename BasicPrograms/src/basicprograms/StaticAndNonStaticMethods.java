@@ -1,7 +1,7 @@
 
 package basicprograms;
 
-//In this program we are calling static and non-static methods declared in the same program
+//In this program we are calling static and non-static methods declared in the same class
 public class StaticAndNonStaticMethods {
     static void StaticMethod()
     {
@@ -14,7 +14,7 @@ public class StaticAndNonStaticMethods {
     public static void main(String[] args) {
         StaticAndNonStaticMethods obj3=new StaticAndNonStaticMethods();
         StaticMethod();
-        //NOTE-STATIC METHODS CAN ACCESS STATIC METHODS
+        //NOTE-STATIC METHODS CAN ACCESS STATIC METHODS 
         obj3.NonStaticMethod();
         //NOTE-STATIC METHODS CAN ACCESS NON-STATIC METHODS BY CREATING OBJECTS
     }
