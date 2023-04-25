@@ -22,6 +22,5 @@ public class TryCatchBlock {
             System.out.println("Number can't be devide by zero");            
         }
         System.out.println("Main method ended");
-    }
-    
+    }    
 }
