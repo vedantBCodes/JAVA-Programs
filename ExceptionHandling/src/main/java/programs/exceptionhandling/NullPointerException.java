@@ -14,8 +14,8 @@ public class NullPointerException {
         try{
             System.out.println(str.toUpperCase());
         }
-        catch( NullPointerException x){
-            System.out.println("Null can't be casted");
+        catch(Exception x){
+            System.out.println(x);
             
         }
     }
