@@ -1,11 +1,9 @@
 package ParameterizedConstructor;
 import java.util.Scanner;
 public class CheckingCharacter { //NOTE-CHARACTERS INCLUDES ALPHABET,NUMBERS AND SPECIAL CHARACTERS
-    public static void main(String[] args) {
-        Scanner obj=new Scanner(System.in);
-        System.out.print("Enter a character:");
-        char ch=obj.next().charAt(0);
-        if((ch>='A')&&(ch<='Z')||(ch>='a')&&(ch<='z'))
+    CheckingCharacter(char ch)
+    {
+       if((ch>='A')&&(ch<='Z')||(ch>='a')&&(ch<='z'))
         {
             System.out.println(ch+" is an alphabet");
         }
@@ -18,5 +16,12 @@ public class CheckingCharacter { //NOTE-CHARACTERS INCLUDES ALPHABET,NUMBERS AND
         {
             System.out.println(ch+" is a special character");
         }
-    }  
+ 
+    }
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.print("Enter a character:");
+        char ch=obj.next().charAt(0);
+        CheckingCharacter obj2=new CheckingCharacter(ch);
+            }  
  }
