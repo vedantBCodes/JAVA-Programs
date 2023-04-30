@@ -11,7 +11,7 @@ import java.util.Scanner;
  * @author Lenovo
  */
 public class CalculatingOccuranceOfCharacter {
-    void CheckOccurancea(String str,char ch)
+    void CheckOccurance(String str,char ch)
     {
         int cnt=0;
         for(int i=0;i<str.length();i++)
@@ -34,11 +34,9 @@ public class CalculatingOccuranceOfCharacter {
         Scanner obj=new Scanner(System.in);
         System.out.println("Enter a string:");
         String str=obj.nextLine();
-        System.out.println("Enter a charcter to check:");
+        System.out.println("Enter a charcter:");
         char ch=obj.next().charAt(0);
         CalculatingOccuranceOfCharacter obj2=new CalculatingOccuranceOfCharacter();
-        obj2.CheckOccurancea(str,ch);
-    }
-    
-    
+        obj2.CheckOccurance(str,ch);
+    } 
 }
