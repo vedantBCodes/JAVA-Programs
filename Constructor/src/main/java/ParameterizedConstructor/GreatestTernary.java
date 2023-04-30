@@ -23,6 +23,5 @@ public class GreatestTernary {
         int b=obj.nextInt();
         int c=obj.nextInt();
         GreatestTernary obj2=new GreatestTernary(a,b,c);
-    }
-    
+    }    
 }
