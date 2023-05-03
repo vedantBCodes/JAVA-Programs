@@ -30,7 +30,7 @@ public class PredefinedArrayMethods {
         {
             System.out.print(z+" ");
         }
-System.out.println("\nEnter another "+x+" array element to check whether it is equal to the previous sorted array or not:");
+        System.out.println("\nEnter another "+x+" array element to check whether it is equal to the previous sorted array or not:");
         for(int i=0;i<x;i++)
         {
             arr2[i]=obj.nextInt();

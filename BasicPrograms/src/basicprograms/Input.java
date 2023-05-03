@@ -11,8 +11,8 @@ import java.util.Scanner;
  * @author Lenovo
  */
 public class Input {
-     Input()
-    {
+     public static void main(String[] args) {
+        
         System.out.println("Enter an integer value:");
         Scanner obj =new Scanner(System.in);
         int num=obj.nextInt();

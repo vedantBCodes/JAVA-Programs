@@ -16,11 +16,11 @@ public class ManipulatingCharacterArray {
         char str[]={'v','e','d','a','n','t'}; //static memory allocation
          for(int i=0;i<str.length;i++)
        {
-            System.out.println("Character st index "+i+" is:"+str[i]);           
+            System.out.println("Character at index "+i+" is:"+str[i]);           
        }
        System.out.print("Enter a string:");
        Scanner obj=new Scanner(System.in);
-       char[] str2 = obj.next().toCharArray();
+       char str2[] = obj.next().toCharArray();
        for(int i=0;i<str.length;i++)
        {
             System.out.println("Character st index "+i+" is:"+str2[i]);           

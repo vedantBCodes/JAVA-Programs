@@ -15,7 +15,7 @@ public class StaticAndNonStaticVariables {
      static void StaticMethod()
     {
         System.out.println("In Static Method:\n a="+a);
-        //NOTE -STATIC METHODS CAN ACCESS ONLY STATIC METHODS
+        //NOTE -STATIC METHODS CAN ACCESS ONLY STATIC VARIABLES
     }
     void NonStaticMethod()
     {
