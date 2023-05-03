@@ -2,21 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package programs.internalexampracticeprogramstmv;
-
+package programs.exceptionhandling;
 import java.util.Scanner;
 class MarksOutOfBoundException extends Exception {
     public  MarksOutOfBoundException(String s)
     {
-       
+       //code
     }
-}     
-
-/**
- *
- * @author Lenovo
- */
-public class OutOfBoundException {
+}   
+public class ThrowingUserDefinedException {
     public static void main(String[] args) {
         Scanner obj=new Scanner(System.in);
         System.out.println("Enter your marks:");
@@ -36,5 +30,5 @@ public class OutOfBoundException {
             System.out.println(x);
         }
         System.out.println("Execution completed");
-    }    
+    }  
 }
