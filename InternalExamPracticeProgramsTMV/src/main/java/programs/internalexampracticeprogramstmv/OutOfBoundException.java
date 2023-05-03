@@ -8,7 +8,7 @@ import java.util.Scanner;
 class MarksOutOfBoundException extends Exception {
     public  MarksOutOfBoundException(String s)
     {
-        super(s);
+       
     }
 }     //INCOMPLETE PROGRAM
 
@@ -21,6 +21,7 @@ public class OutOfBoundException {
         Scanner obj=new Scanner(System.in);
         System.out.println("Enter your marks:");
         int marks=obj.nextInt();
+        try{
         if(marks<=100)
         {
         System.out.println("You got "+marks+" marks");
@@ -29,5 +30,11 @@ public class OutOfBoundException {
         {
         throw new MarksOutOfBoundException("you can't get marks out of bound");
         }        
+        }
+        catch(MarksOutOfBoundException x)
+        {
+            System.out.println(x);
+        }
+        System.out.println("Execution completed");
     }    
 }
