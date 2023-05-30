@@ -18,7 +18,7 @@ public class SeperatingSubstrings {
         while(cnt!=2)
         {
           cnt=0;
-        System.out.println("Please enter a valid name");
+        System.out.println("Please enter a valid full name");
         String str2=obj.nextLine();
         str=str2.trim();
         for(int z=0;z<str.length();z++)
